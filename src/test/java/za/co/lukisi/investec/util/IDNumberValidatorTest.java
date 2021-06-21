@@ -1,12 +1,14 @@
 package za.co.lukisi.investec.util;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.assertTrue;
 
-class IDNumberValidatorTest {
+public class IDNumberValidatorTest {
 
     IDNumberValidator idNumberValidator = new IDNumberValidator();
+
+    public IDNumberValidatorTest(){}
 
     @Test
     public void when_valid_id_is_given_return_true(){

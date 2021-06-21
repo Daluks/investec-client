@@ -23,7 +23,8 @@ import java.util.List;
 @RequestScoped
 public class ValidationFilter implements ContainerRequestFilter {
 
-    private List<String> errorMessages = new ArrayList<>();
+    List<String> errorMessages = new ArrayList<>();
+
     @Override
     public void filter(ContainerRequestContext requestContext) throws IOException {
 
@@ -33,11 +34,8 @@ public class ValidationFilter implements ContainerRequestFilter {
 
         try {
 
-//            errorMessages = new ArrayList<>();
-
             Client client = new ObjectMapper().readValue(inputData, Client.class);
             validateIdNumber(client);
-            validateRequiredFields(client);
 
             if (!errorMessages.isEmpty()) {
                 requestContext.abortWith(Response.status(Response.Status.OK).entity(ErrorResponse.builder()
@@ -57,9 +55,4 @@ public class ValidationFilter implements ContainerRequestFilter {
             errorMessages.add("Invalid Id Number supplied");
         }
     }
-
-    private void validateRequiredFields(Client client){
-
-    }
-
 }

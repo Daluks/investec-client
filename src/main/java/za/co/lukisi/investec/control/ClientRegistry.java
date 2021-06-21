@@ -24,7 +24,7 @@ public class ClientRegistry {
     }
 
     public List<Client> getAllClients() {
-        return clientsCache.entrySet().stream().map(Map.Entry::getValue).collect(Collectors.toList());
+        return clientsCache.values().stream().collect(Collectors.toList());
     }
 
     public Client getClientByIdNumber(String idNumber)
@@ -37,6 +37,7 @@ public class ClientRegistry {
     }
 
     public Client updateClient(Client client) {
+        System.out.println(client.getFirstName());
         return clientsCache.put(client.getIdNumber(), client);
     }
 
@@ -46,8 +47,9 @@ public class ClientRegistry {
 
     public List<Client> getClientByFirstName(final String firstName){
 
-        return clientsCache.entrySet().stream().map(entry -> entry.getValue())
-                .filter(client -> client.getFirstName().equalsIgnoreCase(firstName)).collect(Collectors.toList());
+        return clientsCache.values().stream()
+                .filter(client -> client.getFirstName().equalsIgnoreCase(firstName))
+                .collect(Collectors.toList());
 
 
     }
