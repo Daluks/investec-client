@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="investec-client-api-service-a:war">
+    <output-path>$PROJECT_DIR$/service-a/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>investec-client-api-service-a</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="investec-client-api.war">
+      <element id="artifact" artifact-name="investec-client-api-service-a:war exploded" />
+    </root>
+  </artifact>
+</component>

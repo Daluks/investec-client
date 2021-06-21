@@ -1,0 +1,14 @@
+za\co\lukisi\investec\boundary\rest\ClientAPIRestApplication.class
+za\co\lukisi\investec\boundary\rest\Ping.class
+za\co\lukisi\investec\entity\Client$ClientBuilder.class
+za\co\lukisi\investec\boundary\rest\support\ClientExceptionMapper.class
+za\co\lukisi\investec\boundary\rest\support\ErrorResponse$ErrorResponseBuilder.class
+za\co\lukisi\investec\util\IDNumberValidator.class
+za\co\lukisi\investec\entity\Client.class
+za\co\lukisi\investec\control\ClientRegistry.class
+za\co\lukisi\investec\boundary\rest\support\ValidatedEntity.class
+za\co\lukisi\investec\boundary\rest\support\ValidationFilter.class
+za\co\lukisi\investec\boundary\rest\ClientResource.class
+za\co\lukisi\investec\boundary\rest\support\ErrorResponse.class
+za\co\lukisi\investec\boundary\rest\support\ResponseMessage.class
+za\co\lukisi\investec\control\ClientService.class
