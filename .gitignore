@@ -1,0 +1,7 @@
+# Generated IDE files
+.idea
+*.iml
+
+# Compiled files
+target/
+

@@ -2,40 +2,26 @@
 
 ## Introduction
 
-MicroProfile Starter has generated this MicroProfile application for you.
+This is a rest api that allows for creating, updating and searching for a client.
 
-The generation of the executable jar file can be performed by issuing the following command
+PLease not that The data is not persisted to any persistent storage but remains in cache during runtime.
 
-    mvn clean package
+## Prerequisite
 
-This will create an executable jar file **investec-client-api-microbundle.jar** within the _target_ maven folder. This
-can be started by executing the following command
+1. JDK11 is required
+2. Maven is required to build the project
 
-    java -jar target/investec-client-api-microbundle.jar
+## Building and running
 
-To launch the test page, open your browser at the following URL
+To execute the project you'll need to execute
+```shell
 
-    http://localhost:8080/index.html  
+mvn clean package
 
-## Next Step
+```
+The application should be accessible via (To verigy liveness of the api)
 
-Leave the server-a server running and proceed with the instructions contained in `demo/service-b/readme.md`.
-
-## Specification examples
-
-By default, there is always the creation of a JAX-RS application class to define the path on which the JAX-RS endpoints
-are available.
-
-Also, a simple Hello world endpoint is created, have a look at the class **HelloController**.
-
-More information on MicroProfile can be found [here](https://microprofile.io/)
-
-### Rest Client
-
-A type safe invocation of HTTP rest endpoints.
-Specification [here](https://microprofile.io/project/eclipse/microprofile-rest-client)
-
-The example calls one endpoint from another JAX-RS resource where generated Rest Client is injected as CDI bean.
+ http://localhost:8080/investec-client-api/api/ping
 
 
 
