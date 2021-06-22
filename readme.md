@@ -4,7 +4,7 @@
 
 This is a rest api that allows for creating, updating and searching for a client.
 
-PLease not that The data is not persisted to any persistent storage but remains in cache during runtime.
+Please note that The data is not persisted to any persistent storage but remains in cache during runtime.
 
 ## Prerequisite
 
