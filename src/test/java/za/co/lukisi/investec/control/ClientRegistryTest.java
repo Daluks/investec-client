@@ -1,6 +1,5 @@
 package za.co.lukisi.investec.control;
 
-import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import za.co.lukisi.investec.entity.Client;

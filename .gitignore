@@ -1,6 +1,7 @@
 # Generated IDE files
 .idea
 *.iml
+investec-client-api.iml
 
 # Compiled files
 target/
