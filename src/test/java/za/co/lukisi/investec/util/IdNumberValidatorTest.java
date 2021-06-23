@@ -4,11 +4,11 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertTrue;
 
-public class IDNumberValidatorTest {
+public class IdNumberValidatorTest {
 
-    IDNumberValidator idNumberValidator = new IDNumberValidator();
+    IdNumberValidator idNumberValidator = new IdNumberValidator();
 
-    public IDNumberValidatorTest(){}
+    public IdNumberValidatorTest(){}
 
     @Test
     public void when_valid_id_is_given_return_true(){

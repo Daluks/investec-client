@@ -1,5 +1,11 @@
 package za.co.lukisi.investec.control;
 
-public class ClientService {
+import za.co.lukisi.investec.entity.Client;
+
+import java.util.List;
+
+public interface ClientService {
+
+  List<Client> getAllClients();
 
 }

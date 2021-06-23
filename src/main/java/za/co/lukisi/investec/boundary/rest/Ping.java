@@ -11,8 +11,8 @@ import javax.ws.rs.Path;
 @Singleton
 public class Ping {
 
-    @GET
-    public String sayHello() {
-        return "Pong";
-    }
+  @GET
+  public String sayHello() {
+    return "Pong";
+  }
 }
