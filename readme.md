@@ -19,7 +19,7 @@ To execute the project you'll need to execute
 mvn clean package
 
 ```
-The application should be accessible via (To verigy liveness of the api)
+The application should be accessible using the endpoint below once deployed.
 
  http://localhost:8080/investec-client-api/api/ping
 
